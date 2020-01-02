@@ -1,7 +1,7 @@
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "souldzin"
+title = "conventional:comments"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
