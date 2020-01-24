@@ -1,0 +1,16 @@
+<div class="my-4 p-2 border rounded flex">
+  {{- with .Get "author" }}
+  <img class="cc-avatar" src="/img/avatars/{{ . }}.png" />
+  {{- end }}
+  <div class="w-full ml-2">
+    {{- with .Get "author" }}
+    <div class="text-gray-700">
+      @{{ . }}
+    </div>
+    {{- end }}
+    <div>
+      {{ .Inner | markdownify }}
+    </div>
+  </div>
+</div>
+
