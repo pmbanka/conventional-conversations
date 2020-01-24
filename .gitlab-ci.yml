@@ -4,6 +4,13 @@ image: registry.gitlab.com/conventionalcomments/hugo_node:0.62.1
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
+before_script:
+  - yarn install
+
+cache:
+  paths:
+    - node_modules/
+
 test:
   script:
   - hugo
