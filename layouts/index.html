@@ -1,15 +1,12 @@
 {{ define "main" }}
-  <div class="container mx-auto px-4">
-    <header class="flex items-center justify-center py-2">
-      <div class="cc-speech-bubble">
-        <h1 class="text-lg sm:text-xl md:text-2xl whitespace-no-wrap">
-          <strong>conventional: </strong>
-          <span>comments</span>
-        </h1>
-      </div>
+    <header class="px-2 mx-auto max-w-xl mb-4">
+      <h1 class="text-center text-xl whitespace-no-wrap border-b py-2 sm:text-2xl">
+        <strong>conventional: </strong>
+        <span>comments</span>
+      </h1>
     </header>
 
-    <div class="cc-content">
+    <div class="px-2 mx-auto max-w-3xl">
       {{ .Content }}
     </div>
   </div>
