@@ -1,13 +1,11 @@
+{{ $authorKey := .Get "author" }}
+{{ $author := index .Site.Data.example.users $authorKey }}
 <div class="my-4 p-2 border rounded flex">
-  {{- with .Get "author" }}
-  <img class="cc-avatar" src="/img/avatars/{{ . }}.png" />
-  {{- end }}
+  <img class="cc-avatar" src="{{ $author.avatar }}" />
   <div class="w-full ml-2">
-    {{- with .Get "author" }}
     <div class="text-gray-700">
-      @{{ . }}
+      @{{ $author.slug }}
     </div>
-    {{- end }}
     <div>
       {{ .Inner | markdownify }}
     </div>
