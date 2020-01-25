@@ -14,7 +14,7 @@ If we reference much of a function marked "Deprecated", it is almost certain to 
 **issue (non-blocking):** These buttons should be red, but let's handle this in a follow-up.
 {{< /comment >}}
 
-# Oh! So you're just adding a label to your comments?
+# Oh, so you're just adding a label to your comments?
 
 That's a big part of it. The official over-engineered specs are:
 
