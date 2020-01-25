@@ -7,7 +7,7 @@ Conventional Comments is a method of writing comments so that the intent is clea
 {{< comment author="alice" >}}
 **suggestion:** Let's avoid using this specific function...
 
-If we reference much of a function marked "Deprecated", is almost certain to disagree with us, sooner or later.
+If we reference much of a function marked "Deprecated", it is almost certain to disagree with us, sooner or later.
 {{< /comment >}}
 
 {{< comment author="7ofspades" >}}
