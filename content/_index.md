@@ -5,13 +5,21 @@ Conventional Comments is a method of writing comments so that the intent is clea
 # Okay... Can you show me some examples?
 
 {{< comment author="alice" >}}
-**praise:** Very clever!
+**suggestion:** Let's avoid using this specific function...
+
+If we reference much of a function marked "Deprecated", is almost certain to disagree with us, sooner or later.
 {{< /comment >}}
 
-# Oh, I get it. So what's the official format?
+{{< comment author="7ofspades" >}}
+**issue (non-blocking):** These buttons should be red, but let's handle this in a follow-up.
+{{< /comment >}}
+
+# Oh! So you're just adding a label to your comments?
+
+That's a big part of it. The official over-engineered specs are:
 
 ```
-<type>[decoration]: <subject>
+<type> [decoration]: <subject>
 
-<reason>
+[discussion]
 ```

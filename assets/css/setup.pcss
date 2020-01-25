@@ -26,4 +26,12 @@
   strong {
     @apply font-bold;
   }
+
+  p:not(:last-child) {
+    @apply mb-2;
+  }
+
+  p + p {
+    @apply mt-2;
+  }
 }
