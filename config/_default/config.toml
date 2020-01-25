@@ -2,7 +2,6 @@ contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
 title = "conventional:comments"
-canonifyurls  = true
 
 DefaultContentLanguage = "en"
 metaDataFormat = "yaml"
