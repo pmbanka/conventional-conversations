@@ -23,3 +23,13 @@ That's a big part of it. The official over-engineered specs are:
 
 [discussion]
 ```
+
+# So what labels do you use?
+
+I'll expand on this later, but at the moment, we strongly suggest using:
+
+- **nitpick:**
+- **suggestion:**
+- **issue:**
+- **thought:**
+- **question:**
