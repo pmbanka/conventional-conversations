@@ -27,17 +27,15 @@
   <meta name="twitter:site" content="@{{ . }}" />
   <meta name="twitter:creator" content="@{{ . }}" />
 {{- end }}
-  <meta property="og:url" content="{{ .URL | absLangURL }}" />
+  <meta property="og:url" content="{{ .Permalink | absLangURL }}" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="{{ .Site.Title }}" />
 <!-- Hugo Version number -->
-  {{ .Hugo.Generator -}}
+  {{ hugo.Generator -}}
 <!-- Links and stylesheets -->
-  <link rel="canonical" href="{{ .URL | absLangURL }}" />
+  <link rel="canonical" href="{{ .Permalink | absLangURL }}" />
   <link rel="alternate" href="{{ "index.xml" | absLangURL }}" type="application/rss+xml" title="{{ .Site.Title }}">
-{{ $postCSSConfig := printf "config/%s/postcss.config.js" .Hugo.Environment }}
+{{ $postCSSConfig := printf "config/%s/postcss.config.js" hugo.Environment }}
 {{ $style := resources.Get "css/main.pcss" | postCSS | toCSS }}
-  <link rel="stylesheet" href="{{ $style.Permalink }}" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 </head>
