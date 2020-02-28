@@ -33,3 +33,7 @@ I'll expand on this later, but at the moment, we strongly suggest using:
 - **issue:**
 - **thought:**
 - **question:**
+
+And most importantly
+
+- **praise:**
