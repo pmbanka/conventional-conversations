@@ -1,5 +1,4 @@
 .cc-header {
-  @apply mt-4;
   @apply mb-2;
   @apply font-medium;
 }
@@ -8,15 +7,15 @@
   @apply font-light;
 
   h1 {
-    @apply cc-header text-xl border-b;
+    @apply cc-header mt-6 text-xl border-b;
   }
 
   h2 {
-    @apply cc-header text-xl;
+    @apply cc-header mt-4 text-xl;
   }
 
   h3 {
-    @apply cc-header text-lg;
+    @apply cc-header mt-4 text-lg;
   }
 
   pre {
@@ -27,11 +26,11 @@
     @apply font-bold;
   }
 
-  p:not(:last-child) {
-    @apply mb-2;
+  p {
+    @apply my-2;
   }
 
-  p + p {
-    @apply mt-2;
+  ul {
+    @apply ml-4 list-disc list-inside;
   }
 }
