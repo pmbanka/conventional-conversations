@@ -1,0 +1,50 @@
+body {
+  @apply font-sans text-gray-700;
+}
+
+.cc-header {
+  @apply mb-2;
+  @apply font-medium;
+}
+
+.cc-header-with-border {
+  @apply cc-header border-b border-gray-200;
+}
+
+.cc-content {
+  @apply font-light;
+
+  h1,h2,h3,h4,h5 {
+    &:first-child {
+      @apply my-0;
+    }
+  }
+
+  h1 {
+    @apply cc-header-with-border mt-8 text-xl;
+  }
+
+  h2 {
+    @apply cc-header-with-border mt-8 text-xl;
+  }
+
+  h3 {
+    @apply cc-header mt-4 text-xl;
+  }
+
+  pre {
+    @apply bg-gray-200 text-gray-800 px-2 py-4;
+  }
+
+  strong {
+    @apply font-bold;
+  }
+
+  p {
+    @apply my-2;
+  }
+
+  ul {
+    @apply ml-4 list-disc list-inside;
+  }
+}
