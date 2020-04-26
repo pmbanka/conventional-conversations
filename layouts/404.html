@@ -1,10 +1,8 @@
-{{ define "header" }}<!-- No header on 404 pages -->{{ end }}
 {{ define "main" }}
-  <div role="main" class="container main-content">
-    <div class="text-center">
-      <h1>It's a 404!</h1>
-      <p>There's nothing on this sentence, the title above, and a drawing my 2 year old made... Are you sure you wanted to come here?</p>
-      <img class="border" src="{{ .Site.BaseURL }}/img/404.png" />
+  <div>
+    {{ partial "header.html" . }}
+    <div class="px-2 pb-6 mx-auto max-w-3xl cc-content text-center">
+      Oops... This page was not found. Try going back to the <a href="{{ .Site.BaseURL }}">home page</a>.
     </div>
   </div>
 {{ end }}

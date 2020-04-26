@@ -8,6 +8,6 @@ module.exports = {
     require("postcss-import"),
     require("postcss-nested"),
     tailwindcss(TAILWIND_CONFIG),
-    require("autoprefixer")
-  ]
+    require("autoprefixer"),
+  ],
 };
