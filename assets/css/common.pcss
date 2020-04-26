@@ -1,0 +1,34 @@
+body {
+  @apply font-sans text-gray-700;
+}
+
+a:hover {
+  @apply underline;
+}
+
+.cc-header {
+  @apply mb-2;
+  @apply font-medium;
+}
+
+.cc-header-with-border {
+  @apply cc-header border-b-2 border-gray-100;
+}
+
+.cc-link {
+  @apply text-purple-600;
+  @apply text-sm;
+
+  &:hover {
+    @apply underline;
+  }
+}
+
+.cc-flatten-p {
+  p {
+    @apply my-0;
+    & + p {
+      @apply mt-2;
+    }
+  }
+}

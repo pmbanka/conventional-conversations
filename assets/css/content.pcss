@@ -1,15 +1,4 @@
-body {
-  @apply font-sans text-gray-700;
-}
-
-.cc-header {
-  @apply mb-2;
-  @apply font-medium;
-}
-
-.cc-header-with-border {
-  @apply cc-header border-b-2 border-purple-200;
-}
+@import './common.pcss';
 
 .cc-content {
   @apply font-light;
@@ -33,7 +22,7 @@ body {
   }
 
   pre {
-    @apply bg-gray-200 text-gray-800 px-2 py-4;
+    @apply bg-gray-200 text-gray-800 text-sm p-2 mx-4 my-4;
   }
 
   strong {
@@ -49,6 +38,14 @@ body {
   }
 
   table {
-    @apply table-auto;
+    @apply table-auto w-full;
+  }
+
+  a {
+    @apply cc-link;
+
+    &:hover {
+      @apply underline;
+    }
   }
 }
