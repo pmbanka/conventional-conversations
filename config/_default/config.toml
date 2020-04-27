@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "i18n"]
 
 [Params]
   subtitle = ""
-  logo = "favicon.ico"
+  logo = "logo_128.png"
   favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
@@ -20,8 +20,8 @@ disableKinds = ["taxonomy", "taxonomyTerm", "i18n"]
   comments = true
 
 [Author]
-  name = "souldzin"
-  email = "souldzin@souldzin.com"
+  name = "Paul Slaughter"
+  email = "paul@souldzin.com"
   gitlab = "souldzin"
   github = "souldzin"
   twitter = "souldzin"
