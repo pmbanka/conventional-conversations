@@ -86,12 +86,12 @@ These will be expanded later, but for now, here are some best practices for writ
 - Combine similar comments
 - Replace "you" with "we"
 
-## Prior art
-
-- [Conventional Commits](https://www.conventionalcommits.org)
-- [Google Engineering Practices](https://github.com/google/eng-practices/blob/57c895ad4b09c8941288c04e44a08797b76b4d4d/review/reviewer/standard.md#mentoring)
-
 ## Want to help make this better?
 
 Check out the [GitLab project](https://gitlab.com/conventionalcomments/conventionalcomments.gitlab.io) for this site. 
 Issues and Merge Requests are welcome!
+
+## Prior art
+
+- [Conventional Commits](https://www.conventionalcommits.org)
+- [Google Engineering Practices](https://github.com/google/eng-practices/blob/57c895ad4b09c8941288c04e44a08797b76b4d4d/review/reviewer/standard.md#mentoring)
