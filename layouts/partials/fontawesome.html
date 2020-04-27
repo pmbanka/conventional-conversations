@@ -1,0 +1,6 @@
+<span class="inline-svg" >
+  {{- $fname:=print "node_modules/@fortawesome/fontawesome-free/svgs/" . ".svg" -}}
+  {{- $path:="<path" -}}
+  {{- $fill:="<path fill=\"currentColor\"" -}}
+  {{ replace (readFile $fname) $path $fill | safeHTML }}
+</span>
