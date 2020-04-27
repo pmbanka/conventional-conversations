@@ -10,5 +10,8 @@
   },
   "scripts": {
     "start": "hugo serve"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
   }
 }
