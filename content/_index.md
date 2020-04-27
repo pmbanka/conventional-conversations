@@ -38,7 +38,7 @@ If we reference much of a function marked "Deprecated", it is almost certain to 
 
 ## Target audience
 
-This is intended for giving any kind of review/feedback, such as:
+Conventional Comments is a standard for formatting comments of any kind of review/feedback process, such as:
 
 - [Code review](https://en.wikipedia.org/wiki/Code_review)
 - [Peer review](https://en.wikipedia.org/wiki/Peer_review)
