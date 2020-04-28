@@ -22,7 +22,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "i18n"]
 
 [Author]
   name = "Paul Slaughter"
-  email = "paul@souldzin.com"
+  email = "contact@souldzin.com"
   gitlab = "souldzin"
   github = "souldzin"
   twitter = "souldzin"
