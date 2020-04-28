@@ -7,3 +7,12 @@
 @import 'assets/css/common.pcss';
 @import 'assets/css/content.pcss';
 @import 'assets/css/avatar.pcss';
+
+.cc-flatten-p {
+  p {
+    @apply my-0;
+    & + p {
+      @apply mt-2;
+    }
+  }
+}
