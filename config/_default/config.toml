@@ -1,7 +1,7 @@
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "conventional:comments"
+title = "Conventional Comments"
 
 DefaultContentLanguage = "en"
 metaDataFormat = "yaml"
@@ -11,7 +11,7 @@ pygmentCodeFences = true
 disableKinds = ["taxonomy", "taxonomyTerm", "i18n"]
 
 [Params]
-  subtitle = ""
+  subtitle = "Comments that are easy to grok and grep"
   logo = "logo.png"
   favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
