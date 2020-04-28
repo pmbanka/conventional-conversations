@@ -18,6 +18,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "i18n"]
   commit = false
   rss = true
   comments = true
+  repository = "https://gitlab.com/conventionalcomments/conventionalcomments.gitlab.io"
 
 [Author]
   name = "Paul Slaughter"
