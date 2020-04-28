@@ -1,5 +1,6 @@
 ---
 title: "Conventional Comments"
+description: "Comments that are easy to grok and grep"
 ---
 
 Comments like this are unhelpful...
