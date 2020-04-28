@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "taxonomyTerm", "i18n"]
 
 [Params]
   subtitle = ""
-  logo = "logo_128.png"
+  logo = "logo.png"
   favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
