@@ -87,7 +87,7 @@ We strongly suggest using the following labels:
 
 |                 |             |
 |-----------------|-------------|
-| **praise:**     | Praises highlight something positive. Try to leave at least one of these comments per review. |
+| **praise:**     | Praises highlight something positive. Try to leave at least one of these comments per review. *Do not* leave false praise (which can actually be damaging). *Do* look for something to sincerely praise. |
 | **nitpick:**    | Nitpicks are small, trivial, but necessary changes. Distinguishing nitpick comments significantly helps direct the reader's attention to comments requiring more involvement. |
 | **suggestion:** | Suggestions are specific requests to improve the subject under review. It is assumed that we all want to do what's best, so these comments are never dismissed as "mere suggestions", but are taken seriously. |
 | **issue:**      | Issues represent user-facing problems. If possible, it's great to follow this kind of comment with a **suggestion**. |
