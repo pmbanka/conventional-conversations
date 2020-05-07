@@ -19,6 +19,8 @@
     "dev:js": "parcel watch ./src/js/index.js --out-dir ./assets/out/ --no-cache"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
