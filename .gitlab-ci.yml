@@ -14,6 +14,9 @@ cache:
 test:
   script:
   - NODE_ENV=production yarn build
+  artifacts:
+    paths:
+    - public
   except:
   - master
 
