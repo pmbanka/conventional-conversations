@@ -13,13 +13,16 @@ cache:
 
 test:
   script:
-  - hugo
+  - NODE_ENV=production yarn build
+  artifacts:
+    paths:
+    - public
   except:
   - master
 
 pages:
   script:
-  - hugo
+  - NODE_ENV=production yarn build
   artifacts:
     paths:
     - public
