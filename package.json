@@ -16,7 +16,8 @@
     "dev:hugo": "hugo serve",
     "build:hugo": "hugo",
     "build:js": "parcel build ./src/js/index.js --out-dir ./assets/out/ --no-cache",
-    "dev:js": "parcel watch ./src/js/index.js --out-dir ./assets/out/ --no-cache"
+    "dev:js": "parcel watch ./src/js/index.js --out-dir ./assets/out/ --no-cache",
+    "clean": "rm -rf assets/out public resources/_gen"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
