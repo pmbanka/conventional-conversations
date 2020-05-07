@@ -5,7 +5,7 @@ const purgecss = require("@fullhuman/postcss-purgecss");
 const TAILWIND_CONFIG = path.join(__dirname, "tailwind.config.js");
 
 const purgecssConfig = {
-  content: ["./**/*.html", "./**/*.md"],
+  content: ["./**/*.html", "./**/*.md", "./assets/**/*.js"],
   defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
 };
 
