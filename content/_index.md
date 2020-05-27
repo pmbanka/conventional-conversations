@@ -34,7 +34,7 @@ If we reference much of a function marked "Deprecated", it is almost certain to 
 {{< /comment >}}
 
 {{< comment author="7ofspades" >}}
-**issue (non-blocking):** These buttons should be red, but let's handle this in a follow-up.
+**issue (ux,non-blocking):** These buttons should be red, but let's handle this in a follow-up.
 {{< /comment >}}
 
 ## Target audience
@@ -52,14 +52,14 @@ Adhering to a consistent format improves reader's expectations and machine reada
 Here's the format we propose:
 
 ```
-<label> [decoration]: <subject>
+<label> [decorations]: <subject>
 
 [discussion]
 ```
 
 - *label* - This is a single label that signifies what kind of comment is being left.
 - *subject* - This is the main message of the comment.
-- *decoration (optional)* - This is an extra decorating label for the comment.
+- *decorations (optional)* - These are extra decorating labels for the comment, comma-separated.
 - *discussion (optional)* - This contains supporting statements, context, reasoning, and anything else to help communicate the "why" and "next steps" for resolving the comment.
 
 For example:
@@ -81,6 +81,9 @@ Can be automatically parsed into:
 }
 ```
 
+Labels provide the comment with an action, while decorations give context.
+
+
 ## Labels
 
 We strongly suggest using the following labels:
@@ -96,6 +99,18 @@ We strongly suggest using the following labels:
 | **chore:**      | Chores are simple tasks that must be done before the subject can be "officially" accepted. Usually, these comments reference  some common process. Try to leave a link to the process description so that the reader knows how to resolve the chore. |
 
 Feel free to diverge from this specific list of labels if it seems appropriate.
+
+## Decorations
+
+Decorations indicate optional context for a comment. Decorations are added in brackets after the label as a comma-separated list (no spaces).
+
+{{< comment author="ccat" >}}
+**issue (test,fixtures):** This assertion can now rely on the api fixtures.
+{{< /comment >}}
+
+Suitable values for decorations will be unique to each project. We recommend that a set of possible decorations are established for a project. An agreed set of decorations should have no ambiguity as to what they are for and should not contain more than one decoration intended for the same context.
+
+Adding a decoration should improve understandability and should maintain readability. Having a list of many decorations in one comment would conflict with this ideal.
 
 ## More examples
 
