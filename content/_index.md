@@ -76,7 +76,7 @@ Can be automatically parsed into:
 {
   "label": "question",
   "subject": "At this point, does it matter which thread has won?",
-  "decoration": ["non-blocking"],
+  "decorations": ["non-blocking"],
   "discussion": "Maybe to prevent a race condition we should keep looping until they've all won?"
 }
 ```
