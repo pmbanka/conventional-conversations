@@ -34,7 +34,7 @@ If we reference much of a function marked "Deprecated", it is almost certain to 
 {{< /comment >}}
 
 {{< comment author="7ofspades" >}}
-**issue (non-blocking):** These buttons should be red, but let's handle this in a follow-up.
+**issue (ux,non-blocking):** These buttons should be red, but let's handle this in a follow-up.
 {{< /comment >}}
 
 ## Target audience
@@ -52,14 +52,14 @@ Adhering to a consistent format improves reader's expectations and machine reada
 Here's the format we propose:
 
 ```
-<label> [decoration]: <subject>
+<label> [decorations]: <subject>
 
 [discussion]
 ```
 
 - *label* - This is a single label that signifies what kind of comment is being left.
 - *subject* - This is the main message of the comment.
-- *decoration (optional)* - This is an extra decorating label for the comment.
+- *decorations (optional)* - These are extra decorating labels for the comment. They are surrounded by parentheses and comma-separated.
 - *discussion (optional)* - This contains supporting statements, context, reasoning, and anything else to help communicate the "why" and "next steps" for resolving the comment.
 
 For example:
@@ -76,7 +76,7 @@ Can be automatically parsed into:
 {
   "label": "question",
   "subject": "At this point, does it matter which thread has won?",
-  "decoration": ["non-blocking"],
+  "decorations": ["non-blocking"],
   "discussion": "Maybe to prevent a race condition we should keep looping until they've all won?"
 }
 ```
@@ -96,6 +96,32 @@ We strongly suggest using the following labels:
 | **chore:**      | Chores are simple tasks that must be done before the subject can be "officially" accepted. Usually, these comments reference  some common process. Try to leave a link to the process description so that the reader knows how to resolve the chore. |
 
 Feel free to diverge from this specific list of labels if it seems appropriate.
+
+## Decorations
+
+Decorations give additional context for a comment. They help further classify comments which have the same label (for example, a security suggestion as opposed to a test suggestion).
+
+{{< comment author="ccat" >}}
+**suggestion (security):** I'm a bit concerned that we are implementing our own DOM purifying function here...
+
+Could we consider using the framework instead?
+{{< /comment >}}
+
+{{< comment author="ccat" >}}
+**suggestion (test,if-minor):** It looks like we're missing some unit test coverage that the cat disappears completely.
+{{< /comment >}}
+
+Decorations may be specific to each organization. If needed, we recommend establishing a minimal set of decorations (leaving room for discretion) with no ambiguity.
+
+Possible decorations include:
+
+|                 |             |
+|-----------------|-------------|
+| **(non-blocking)**     | A comment with this decoration **should not** prevent the subject under review from being accepted. This is helpful for organizations that consider comments blocking by default. |
+| **(blocking)**     | A comment with this decoration **should** prevent the subject under review from being accepted, until it is resolved. This is helpful for organizations that consider comments non-blocking by default. |
+| **(if-minor)**     | This decoration gives some freedom to the author that they should resolve the comment only if the changes ends up being minor or trivial. |
+
+Adding a decoration to a comment should improve understandability and maintain readability. Having a list of many decorations in one comment would conflict with this goal.
 
 ## More examples
 
