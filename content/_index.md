@@ -59,7 +59,7 @@ Here's the format we propose:
 
 - *label* - This is a single label that signifies what kind of comment is being left.
 - *subject* - This is the main message of the comment.
-- *decorations (optional)* - These are extra decorating labels for the comment, comma-separated.
+- *decorations (optional)* - These are extra decorating labels for the comment. They are surrounded by parentheses and comma-separated.
 - *discussion (optional)* - This contains supporting statements, context, reasoning, and anything else to help communicate the "why" and "next steps" for resolving the comment.
 
 For example:
@@ -81,9 +81,6 @@ Can be automatically parsed into:
 }
 ```
 
-Labels provide the comment with an action, while decorations give context.
-
-
 ## Labels
 
 We strongly suggest using the following labels:
@@ -102,15 +99,29 @@ Feel free to diverge from this specific list of labels if it seems appropriate.
 
 ## Decorations
 
-Decorations indicate optional context for a comment. Decorations are added in brackets after the label as a comma-separated list (no spaces).
+Decorations give additional context for a comment. They help further classify comments which have the same label (for example, a security suggestion as opposed to a test suggestion).
 
 {{< comment author="ccat" >}}
-**issue (test,fixtures):** This assertion can now rely on the api fixtures.
+**suggestion (security):** I'm a bit concerned that we are implementing our own DOM purifying function here...
+
+Could we consider using the framework instead?
 {{< /comment >}}
 
-Suitable values for decorations will be unique to each project. We recommend that a set of possible decorations are established for a project. An agreed set of decorations should have no ambiguity as to what they are for and should not contain more than one decoration intended for the same context.
+{{< comment author="ccat" >}}
+**suggestion (test,if-minor):** It looks like we're missing some unit test coverage that the cat disappears completely.
+{{< /comment >}}
 
-Adding a decoration should improve understandability and should maintain readability. Having a list of many decorations in one comment would conflict with this ideal.
+Decorations may be specific to each organization. If needed, we recommend establishing a minimal set of decorations (leaving room for discretion) with no ambiguity.
+
+Possible decorations include:
+
+|                 |             |
+|-----------------|-------------|
+| **(non-blocking)**     | A comment with this decoration **should not** prevent the subject under review from being accepted. This is helpful for organizations that consider comments blocking by default. |
+| **(blocking)**     | A comment with this decoration **should** prevent the subject under review from being accepted, until it is resolved. This is helpful for organizations that consider comments non-blocking by default. |
+| **(if-minor)**     | This decoration gives some freedom to the author that they should resolve the comment only if the changes ends up being minor or trivial. |
+
+Adding a decoration to a comment should improve understandability and maintain readability. Having a list of many decorations in one comment would conflict with this goal.
 
 ## More examples
 
