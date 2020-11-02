@@ -43,7 +43,7 @@ Conventional Comments is a standard for formatting comments of any kind of revie
 
 - [Code review](https://en.wikipedia.org/wiki/Code_review)
 - [Peer review](https://en.wikipedia.org/wiki/Peer_review)
-- [Revising](https://en.wikipedia.org/wiki/Revision_(writing)) and [editing](https://en.wikipedia.org/wiki/Editing)
+- [Revising](<https://en.wikipedia.org/wiki/Revision_(writing)>) and [editing](https://en.wikipedia.org/wiki/Editing)
 - [RFC](https://en.wikipedia.org/wiki/Request_for_Comments)
 
 ## Format
@@ -57,10 +57,10 @@ Here's the format we propose:
 [discussion]
 ```
 
-- *label* - This is a single label that signifies what kind of comment is being left.
-- *subject* - This is the main message of the comment.
-- *decorations (optional)* - These are extra decorating labels for the comment. They are surrounded by parentheses and comma-separated.
-- *discussion (optional)* - This contains supporting statements, context, reasoning, and anything else to help communicate the "why" and "next steps" for resolving the comment.
+- _label_ - This is a single label that signifies what kind of comment is being left.
+- _subject_ - This is the main message of the comment.
+- _decorations (optional)_ - These are extra decorating labels for the comment. They are surrounded by parentheses and comma-separated.
+- _discussion (optional)_ - This contains supporting statements, context, reasoning, and anything else to help communicate the "why" and "next steps" for resolving the comment.
 
 For example:
 
@@ -85,15 +85,15 @@ Can be automatically parsed into:
 
 We strongly suggest using the following labels:
 
-|                 |             |
-|-----------------|-------------|
-| **praise:**     | Praises highlight something positive. Try to leave at least one of these comments per review. *Do not* leave false praise (which can actually be damaging). *Do* look for something to sincerely praise. |
-| **nitpick:**    | Nitpicks are small, trivial, but necessary changes. Distinguishing nitpick comments significantly helps direct the reader's attention to comments requiring more involvement. |
-| **suggestion:**      | Suggestions propose improvements to the current subject. It's important to be explicity and clear on *what* is being suggested and *why* it is an improvement. Consider using the *blocking* or *non-blocking* decorators to further communicate your intent. |
-| **issue:**      | Issues highlight problems with the subject under review. These problems can be user-facing or behind the scenes. It is strongly recommended to pair this comment with a `suggestion`. If you are not sure if a problem exists or not, consider leaving a `question` asking if they have considered this potential problem. |
-| **question:**   | Questions are appropriate if you have a potential concern but are not quite sure if it's relevant or not. Asking the author for clarification or investigation can lead to a quick resolution. |
-| **thought:**    | Thoughts represent an idea that popped up from reviewing. These comments are non-blocking by nature, but they are extremely valuable and can lead to more focused initiatives and mentoring opportunities. |
-| **chore:**      | Chores are simple tasks that must be done before the subject can be "officially" accepted. Usually, these comments reference  some common process. Try to leave a link to the process description so that the reader knows how to resolve the chore. |
+|                 |                                                                                                                                                                                                                                                                                           |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **praise:**     | Praises highlight something positive. Try to leave at least one of these comments per review. _Do not_ leave false praise (which can actually be damaging). _Do_ look for something to sincerely praise.                                                                                  |
+| **nitpick:**    | Nitpicks are small, trivial, but necessary changes. Distinguishing nitpick comments significantly helps direct the reader's attention to comments requiring more involvement.                                                                                                             |
+| **suggestion:** | Suggestions propose improvements to the current subject. It's important to be explicit and clear on _what_ is being suggested and _why_ it is an improvement. Consider using patches and the _blocking_ or _non-blocking_ [decorations](#decorations) to further communicate your intent. |
+| **issue:**      | Issues highlight specific problems with the subject under review. These problems can be user-facing or behind the scenes. It is strongly recommended to pair this comment with a `suggestion`. If you are not sure if a problem exists or not, consider leaving a `question`.             |
+| **question:**   | Questions are appropriate if you have a potential concern but are not quite sure if it's relevant or not. Asking the author for clarification or investigation can lead to a quick resolution.                                                                                            |
+| **thought:**    | Thoughts represent an idea that popped up from reviewing. These comments are non-blocking by nature, but they are extremely valuable and can lead to more focused initiatives and mentoring opportunities.                                                                                |
+| **chore:**      | Chores are simple tasks that must be done before the subject can be "officially" accepted. Usually, these comments reference some common process. Try to leave a link to the process description so that the reader knows how to resolve the chore.                                       |
 
 Feel free to diverge from this specific list of labels if it seems appropriate.
 
@@ -115,11 +115,11 @@ Decorations may be specific to each organization. If needed, we recommend establ
 
 Possible decorations include:
 
-|                 |             |
-|-----------------|-------------|
-| **(non-blocking)**     | A comment with this decoration **should not** prevent the subject under review from being accepted. This is helpful for organizations that consider comments blocking by default. |
+|                    |                                                                                                                                                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **(non-blocking)** | A comment with this decoration **should not** prevent the subject under review from being accepted. This is helpful for organizations that consider comments blocking by default.                       |
 | **(blocking)**     | A comment with this decoration **should** prevent the subject under review from being accepted, until it is resolved. This is helpful for organizations that consider comments non-blocking by default. |
-| **(if-minor)**     | This decoration gives some freedom to the author that they should resolve the comment only if the changes ends up being minor or trivial. |
+| **(if-minor)**     | This decoration gives some freedom to the author that they should resolve the comment only if the changes ends up being minor or trivial.                                                               |
 
 Adding a decoration to a comment should improve understandability and maintain readability. Having a list of many decorations in one comment would conflict with this goal.
 
@@ -152,7 +152,7 @@ These will be expanded later, but for now, here are some best practices for writ
 
 ## Want to help make this better?
 
-Check out the [GitLab project](https://gitlab.com/conventionalcomments/conventionalcomments.gitlab.io) for this site. 
+Check out the [GitLab project](https://gitlab.com/conventionalcomments/conventionalcomments.gitlab.io) for this site.
 Issues and Merge Requests are welcome!
 
 ## Prior art
