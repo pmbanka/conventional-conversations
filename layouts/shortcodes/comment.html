@@ -2,9 +2,9 @@
 {{ $author := index .Site.Data.example.users $authorKey }}
 <div class="mx-4 my-4">
   <div class="p-2 border rounded flex cc-flatten-p">
-    <img class="cc-avatar" src="{{ $author.avatar }}" />
+    <img class="cc-avatar" src="{{ $author.avatar }}" alt="{{ $author.name }}" />
     <div class="w-full ml-2">
-      <div class="text-gray-500">
+      <div class="text-gray-600">
         @{{ $author.slug }}
       </div>
       <div class="cc-flatten-p">

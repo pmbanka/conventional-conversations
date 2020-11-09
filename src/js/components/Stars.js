@@ -20,7 +20,7 @@ export const Stars = ({ projectPath }) => {
 
   return (
     <div className={["cc-stars", !shouldShow ? "invisible" : ""].join(" ")}>
-      <a className="cc-stars-part bg-white z-10" href={href}>
+      <a className="cc-stars-part bg-white z-10" href={href} aria-label="Star">
         <Svg className="inline-block w-1em h-1em text-purple-700" name="star" />
       </a>
       <div
