@@ -1,5 +1,5 @@
 body {
-  @apply font-sans text-gray-800;
+  @apply font-sans text-gray-900;
 }
 
 a:hover {
@@ -7,6 +7,8 @@ a:hover {
 }
 
 pre {
+  @apply bg-gray-100 text-gray-700;
+
   overflow-x: auto;
 }
 
@@ -14,7 +16,7 @@ code {
   @apply text-sm text-pink-600 bg-gray-100 px-1;
 
   pre & {
-    @apply text-gray-700 bg-transparent px-0;
+    @apply text-gray-600 bg-transparent px-0;
   }
 }
 
@@ -28,7 +30,7 @@ code {
 }
 
 .cc-link {
-  @apply text-purple-600;
+  @apply text-purple-600;  
 
   &:hover {
     @apply underline;
