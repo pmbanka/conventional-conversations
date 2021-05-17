@@ -16,5 +16,11 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  purge: {
+    mode: 'all',
+    content: ["./**/*.html", "./**/*.md", "./assets/**/*.js"],
+    options: {
+      defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+    }
+  }
 };
