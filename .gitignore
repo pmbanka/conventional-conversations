@@ -2,4 +2,4 @@ assets/out/
 public/
 node_modules/
 _gen/
-
+.parcel-cache/
