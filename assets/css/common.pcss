@@ -1,46 +1,57 @@
-body {
-  @apply font-sans text-gray-900;
-}
-
-a:hover {
-  @apply underline;
-}
-
-pre {
-  @apply bg-gray-100 text-gray-700;
-
-  overflow-x: auto;
-}
-
-code {
-  @apply text-sm text-pink-600 bg-gray-100 px-1;
-
-  pre & {
-    @apply text-gray-600 bg-transparent px-0;
+@layer base {
+  body {
+    @apply font-sans text-gray-900;
+    @apply dark:bg-gray-900 dark:text-gray-100;
   }
-}
 
-.cc-header {
-  @apply mb-2;
-  @apply font-medium;
-}
+  * {
+    @apply dark:border-gray-700;
+  }
 
-.cc-header-with-border {
-  @apply cc-header border-b-2 border-gray-100;
-}
-
-.cc-link {
-  @apply text-purple-600;  
-
-  &:hover {
+  a:hover {
     @apply underline;
   }
+
+  pre {
+    @apply bg-gray-100 text-gray-700;
+    @apply dark:bg-gray-700 dark:text-gray-200;
+
+    overflow-x: auto;
+  }
+
+  code {
+    @apply text-sm text-pink-600 bg-gray-100 px-1;
+    @apply dark:bg-gray-800 dark:text-pink-400;
+
+    pre & {
+      @apply text-gray-600 bg-transparent px-0;
+      @apply dark:text-gray-100 dark:bg-transparent;
+    }
+  }
 }
 
-.svg-link {
-  @apply s-6;
+@layer components {
+  .cc-header {
+    @apply mb-2 font-medium;
+  }
 
-  &:hover {
-    @apply text-purple-500;
+  .cc-header-with-border {
+    @apply cc-header border-b-2 border-gray-700 dark:border-gray-200;
+  }
+
+  .cc-link {
+    @apply text-purple-600;
+    
+    &:hover {
+      @apply underline;
+    }
+  }
+
+  .svg-link {
+    @apply s-6;
+
+    &:hover {
+      @apply text-purple-500;
+    }
   }
 }

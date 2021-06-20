@@ -1,10 +1,10 @@
 {{ $authorKey := .Get "author" }}
 {{ $author := index .Site.Data.example.users $authorKey }}
 <div class="mx-4 my-4">
-  <div class="p-2 border rounded flex cc-flatten-p">
+  <div class="p-2 border rounded flex cc-flatten-p dark:bg-gray-800">
     <img class="cc-avatar" src="{{ $author.avatar }}" alt="{{ $author.name }}" />
     <div class="w-full ml-2">
-      <div class="text-gray-600">
+      <div class="text-gray-600 dark:text-gray-400">
         @{{ $author.slug }}
       </div>
       <div class="cc-flatten-p">

@@ -15,7 +15,11 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      display: ['dark'],
+    }
+  },
   purge: {
     mode: 'all',
     content: ["./**/*.html", "./**/*.md", "./assets/**/*.js"],

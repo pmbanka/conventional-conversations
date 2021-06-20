@@ -1,59 +1,61 @@
-@import './common.pcss';
+@layer components {
+  .cc-content {
+    @apply font-light;
 
-.cc-content {
-  @apply font-light;
-
-  h1,h2,h3,h4,h5 {
-    &:first-child {
-      @apply my-0;
+    h1,h2,h3,h4,h5 {
+      &:first-child {
+        @apply my-0;
+      }
     }
-  }
 
-  h1 {
-    @apply cc-header-with-border mt-8 text-xl;
-  }
-
-  h2 {
-    @apply cc-header-with-border mt-8 text-xl;
-  }
-
-  h3 {
-    @apply cc-header mt-4 text-xl;
-  }
-
-  pre {
-    @apply text-sm p-2 mx-4 my-4;
-  }
-
-  strong {
-    @apply font-bold;
-  }
-
-  p {
-    @apply my-2;
-  }
-
-  ul {
-    @apply ml-4 list-disc list-inside;
-  }
-
-  table {
-    @apply table-auto w-full;
-  }
-
-  a {
-    @apply cc-link;
-
-    &:hover {
-      @apply underline;
+    h1 {
+      @apply cc-header border-b-2 dark:border-gray-200;
+      @apply mt-8 text-xl;
     }
-  }
 
-  td {
-    @apply border p-2 align-top;
+    h2 {
+      @apply cc-header border-b-2 dark:border-gray-200;
+      @apply mt-8 text-xl;
+    }
 
-    &:first-child {
-      @apply whitespace-nowrap;
+    h3 {
+      @apply cc-header mt-4 text-xl;
+    }
+
+    pre {
+      @apply text-sm p-2 mx-4 my-4;
+    }
+
+    strong {
+      @apply font-bold;
+    }
+
+    p {
+      @apply my-2;
+    }
+
+    ul {
+      @apply ml-4 list-disc list-inside;
+    }
+
+    table {
+      @apply table-auto w-full;
+    }
+
+    a {
+      @apply cc-link;
+
+      &:hover {
+        @apply underline;
+      }
+    }
+
+    td {
+      @apply border p-2 align-top;
+
+      &:first-child {
+        @apply whitespace-nowrap;
+      }
     }
   }
 }
