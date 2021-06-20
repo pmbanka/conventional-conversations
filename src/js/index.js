@@ -1,3 +1,4 @@
+import { setupDarkMode } from "./setupDarkMode";
 import { setupStars } from "./setupStars";
 
 const wrap = (fn) =>
@@ -22,6 +23,6 @@ const wrapAndLogErrors = (fn) =>
 
 const run = (...fns) => Promise.all(fns.map(wrapAndLogErrors));
 
-const main = () => run(setupStars);
+const main = () => run(setupDarkMode, setupStars);
 
 document.addEventListener("DOMContentLoaded", main);
