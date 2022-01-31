@@ -149,6 +149,7 @@ These will be expanded later, but for now, here are some best practices for writ
 - Leave actionable comments
 - Combine similar comments
 - Replace "you" with "we"
+- Replace "should" with "could"
 
 ## Want to help make this better?
 
