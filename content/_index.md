@@ -88,12 +88,21 @@ We strongly suggest using the following labels:
 |                 |                                                                                                                                                                                                                                                                                           |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **praise:**     | Praises highlight something positive. Try to leave at least one of these comments per review. _Do not_ leave false praise (which can actually be damaging). _Do_ look for something to sincerely praise.                                                                                  |
-| **nitpick:**    | Nitpicks are small, trivial, but necessary changes. Distinguishing nitpick comments significantly helps direct the reader's attention to comments requiring more involvement.                                                                                                             |
+| **nitpick:**    | Nitpicks are trivial preference-based requests. These should be non-blocking by nature. |
 | **suggestion:** | Suggestions propose improvements to the current subject. It's important to be explicit and clear on _what_ is being suggested and _why_ it is an improvement. Consider using patches and the _blocking_ or _non-blocking_ [decorations](#decorations) to further communicate your intent. |
 | **issue:**      | Issues highlight specific problems with the subject under review. These problems can be user-facing or behind the scenes. It is strongly recommended to pair this comment with a `suggestion`. If you are not sure if a problem exists or not, consider leaving a `question`.             |
+| **todo:**       | TODO's are small, trivial, but necessary changes. Distinguishing todo comments from issues: or suggestions: helps direct the reader's attention to comments requiring more involvement. |
 | **question:**   | Questions are appropriate if you have a potential concern but are not quite sure if it's relevant or not. Asking the author for clarification or investigation can lead to a quick resolution.                                                                                            |
 | **thought:**    | Thoughts represent an idea that popped up from reviewing. These comments are non-blocking by nature, but they are extremely valuable and can lead to more focused initiatives and mentoring opportunities.                                                                                |
 | **chore:**      | Chores are simple tasks that must be done before the subject can be "officially" accepted. Usually, these comments reference some common process. Try to leave a link to the process description so that the reader knows how to resolve the chore.                                       |
+
+If you like to be a bit more expressive with your labels, you may also consider:
+
+|    |    |
+|----|----|
+| **typo:** | Typo comments are like **todo:**, where the main issue is a mispelling. |
+| **polish:** | Polish comments are like a **suggestion**, where there is nothing necessarily wrong with the relevant content, there's just some ways to immediately improve the quality. |
+| **quibble:** | Quibbles are very much like **nitpick:**, except it does not conjure up images of lice and animal hygiene practices. |
 
 Feel free to diverge from this specific list of labels if it seems appropriate.
 
