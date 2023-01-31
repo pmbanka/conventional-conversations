@@ -95,6 +95,7 @@ We strongly suggest using the following labels:
 | **question:**   | Questions are appropriate if you have a potential concern but are not quite sure if it's relevant or not. Asking the author for clarification or investigation can lead to a quick resolution.                                                                                            |
 | **thought:**    | Thoughts represent an idea that popped up from reviewing. These comments are non-blocking by nature, but they are extremely valuable and can lead to more focused initiatives and mentoring opportunities.                                                                                |
 | **chore:**      | Chores are simple tasks that must be done before the subject can be "officially" accepted. Usually, these comments reference some common process. Try to leave a link to the process description so that the reader knows how to resolve the chore.                                       |
+| **note:**      | Notes are always non-blocking and simply highlight something the reader should take note of.                                       |
 
 If you like to be a bit more expressive with your labels, you may also consider:
 
