@@ -23,7 +23,7 @@ Labels also prompt the reviewer to give more **actionable** comments.
 Can we change this to match the wording of the marketing page?
 {{< /comment >}}
 
-Labeling comments saves **hours** of undercommunication and misunderstandings. They are also parseable by machines!
+Labeling comments encourages collaboration and saves **hours** of undercommunication and misunderstandings. They are also parseable by machines!
 
 ## Examples
 
